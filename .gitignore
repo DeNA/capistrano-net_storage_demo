@@ -1,0 +1,6 @@
+*.sw[pon]
+/tmp/
+/log/
+
+# capistrano-net_storage
+/.local_repo/
