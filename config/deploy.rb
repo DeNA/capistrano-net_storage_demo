@@ -13,10 +13,13 @@ set :repo_url, 'git@github.com:DeNADev/capistrano-net_storage_demo.git'
 # For capistrano-net_storage
 require 'capistrano/net_storage_demo/direct_upload'
 set :scm, :net_storage
-set :net_storage_transport, Capistrano::NetStorageDemo::DirectUpload
+set :net_storage_transport, Capistrano::NetStorage::S3::Transport
 set :net_storage_config_files, ["#{Dir.pwd}/example/config/app.yml"]
 set :net_storage_with_bundle, true
 # set :net_storage_archiver, Capistrano::NetStorage::Archiver::TarGzip
+
+set :net_storage_s3_bucket, 'example-bucket'
+set :net_storage_s3_archives_directory, fetch(:application)
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
