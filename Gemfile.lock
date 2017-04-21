@@ -14,7 +14,7 @@ GEM
       bundler
       capistrano (>= 3.3.3)
       parallel
-    capistrano-net_storage-s3 (0.2.0)
+    capistrano-net_storage-s3 (0.2.1)
       capistrano-net_storage
       retryable
     i18n (0.8.1)
