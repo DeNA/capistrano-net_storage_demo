@@ -10,7 +10,7 @@ GEM
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
     capistrano-harrow (0.5.3)
-    capistrano-net_storage (0.2.0)
+    capistrano-net_storage (0.2.1)
       bundler
       capistrano (>= 3.3.3)
       parallel
