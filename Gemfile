@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'capistrano', '3.6.1'
+gem 'capistrano'
 gem 'capistrano-net_storage'

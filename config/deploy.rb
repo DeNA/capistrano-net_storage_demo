@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.6.1'
+lock '3.8.2'
 
 set :application, 'capistrano-net_storage-demo'
 set :repo_url, 'git@github.com:DeNADev/capistrano-net_storage_demo.git'
@@ -12,7 +12,6 @@ set :repo_url, 'git@github.com:DeNADev/capistrano-net_storage_demo.git'
 
 # For capistrano-net_storage
 require 'capistrano/net_storage_demo/direct_upload'
-set :scm, :net_storage
 set :net_storage_transport, Capistrano::NetStorageDemo::DirectUpload
 set :net_storage_config_files, ["#{Dir.pwd}/example/config/app.yml"]
 set :net_storage_with_bundle, true
