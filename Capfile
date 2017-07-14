@@ -4,7 +4,8 @@ require "capistrano/setup"
 # Include default deployment tasks
 require "capistrano/deploy"
 
-require "capistrano/net_storage"
+require "capistrano/net_storage/plugin"
+install_plugin Capistrano::NetStorage::Plugin
 require "capistrano/net_storage/s3"
 
 # Include tasks from other gems included in your Gemfile
